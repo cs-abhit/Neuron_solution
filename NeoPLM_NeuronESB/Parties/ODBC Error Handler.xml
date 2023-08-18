@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>7a9d61ff-42c5-49d8-abea-2ddcc5217c03</Id>
-  <Version>1312ade3-4067-492e-bc2f-e410e60bfb40</Version>
+  <Version>d09484ec-b297-4b21-b427-cf7819ec30f4</Version>
   <BusinessFlows />
   <Description>A subscriber to route error messages to the Neo Errors database for the purposes of logging / test support.  There is an environment variable switch, ODBC Error Publishing, to enable / disable this functionality.</Description>
   <Name>ODBC Error Handler</Name>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>95dd404d-234e-4773-8294-9853c194a392</Id>
-  <Version>76787813-81b3-4284-a6c5-2eed9dccff05</Version>
+  <Version>9116ed20-93d2-4db4-a8bd-932948638b6e</Version>
   <BusinessFlows />
   <Description>A Publisher to transfer inbound messages from the ERP facing web service, perform basic schema validation, using the mapped VETO processes, and assuming the messages are successful to route them to the appropriate message specific topics.</Description>
   <Name>B2MML_ERP_Publisher</Name>

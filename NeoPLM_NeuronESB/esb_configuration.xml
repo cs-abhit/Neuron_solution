@@ -1,19 +1,24 @@
 <?xml version="1.0"?>
 <ESBConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Version>2310</Version>
-  <EnvironmentName>NEOPLM_NeuronESB_Pfizer_07282023 - Configured</EnvironmentName>
-  <NeuronBuildVersion>3.7.5.571</NeuronBuildVersion>
+  <Version>2358</Version>
+  <EnvironmentName>NeoPLM_NeuronESB</EnvironmentName>
+  <NeuronBuildVersion>3.7.5.567</NeuronBuildVersion>
   <ApplicationName>Dev</ApplicationName>
   <ApplicationId>0de8bb4a-6447-4cae-9c25-260ff5dd53aa</ApplicationId>
   <ZoneName>Enterprise</ZoneName>
   <ChangeList>
-    <Additions />
+    <Additions>
+      <string>Add,Enterprise,adapter endpoint,ActiveMQ Neo AMPS Endpoint</string>
+      <string>Add,Enterprise,adapter endpoint,ActiveMQ Neo SAP Endpoint</string>
+      <string>Edit,Enterprise,adapter endpoint,ActiveMQ Neo AMPS Endpoint</string>
+      <string>Edit,Enterprise,adapter endpoint,ActiveMQ Neo SAP Endpoint</string>
+    </Additions>
     <Revisions>
-      <string>Edit,*,XML Schema,EnterpriseHelper</string>
+      <string>Edit,*,pipeline,ProcessInputMessage</string>
     </Revisions>
     <Deletions />
     <LastModifiedBy />
-    <LastModifiedDate>2023-08-16T07:31:29.6462102Z</LastModifiedDate>
+    <LastModifiedDate>2023-08-18T11:15:42.0576673Z</LastModifiedDate>
     <Comments />
   </ChangeList>
   <NeuronEnvironmentVariables />

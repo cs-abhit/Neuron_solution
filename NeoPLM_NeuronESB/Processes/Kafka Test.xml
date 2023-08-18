@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>0eeef74c-5db6-4cd4-9538-56aafc4a1a60</Id>
-  <Version>988376a8-1ed6-47a0-be36-5ef550ef09eb</Version>
+  <Version>d4a2e9d9-8361-44ba-af2b-bfb26dbd7de0</Version>
   <BusinessFlows />
   <Description />
   <Name>Kafka Test</Name>
@@ -10,12 +10,14 @@
   <Category>General</Category>
   <IsEncrypted>true</IsEncrypted>
   <Path>Kafka Test</Path>
-  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Kafka Test&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;1bc9174e-3cd9-4765-b140-fafd72923ff1&lt;/Id&gt;&lt;Name&gt;Trace Properties&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("KAFKA INPUT MESSAGE : " + context.Data.Text);
+  <PipelineBlob>&lt;ESBMessagePipeline xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.neuronesb.com/pipelines/"&gt;&lt;Category&gt;General&lt;/Category&gt;&lt;Description i:nil="true" /&gt;&lt;GlobalProperties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Name&gt;Kafka Test&lt;/Name&gt;&lt;Properties xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;ReferencedAssemblies xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" /&gt;&lt;Steps&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;1bc9174e-3cd9-4765-b140-fafd72923ff1&lt;/Id&gt;&lt;Name&gt;Trace Properties&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;if(context.Instance.IsDebugEnabled){
+context.Instance.TraceDebug("KAFKA INPUT MESSAGE : " + context.Data.Text);
+}
 
 //var properties = context.Data.GetProperties("kafka");
 
 //foreach( var property in properties){
-//	context.Instance.TraceInformation(" NAME in kafka : " + property.Name + ". VALUE : " + property.Value);
+//	context.Instance.TraceDebug(" NAME in kafka : " + property.Name + ". VALUE : " + property.Value);
 //}
 
 string topicName = "";

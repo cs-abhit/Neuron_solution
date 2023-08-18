@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBService xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>2795c037-13f6-402a-942e-0c4f0bf6fd43</Id>
-  <Version>41a7ef9c-be70-4a1a-acef-370d0ff0cdd3</Version>
+  <Version>330583f9-3c85-46f0-a9ad-18e1b86c9fee</Version>
   <BusinessFlows />
   <Description>This client connector is used to receive the request which restarts the Send Production Version Process.</Description>
   <Name>RestartSendPVProcess</Name>

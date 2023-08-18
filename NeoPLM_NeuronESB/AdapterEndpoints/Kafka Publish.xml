@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBEndpoint xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>2a6baa8b-32b3-4650-ab3a-058219500fde</Id>
-  <Version>6a8fdd0c-20b8-47eb-9aa4-605718c094ba</Version>
+  <Version>cbd964a5-052e-4a62-a712-c5d7bd1aebff</Version>
   <BusinessFlows />
   <Description>This adapter consumes the Kafka queue to receive and pass the messages from particular Kafka topic to the Kafka Enrichment Process.</Description>
   <Name>Kafka Publish</Name>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>59b4347e-834b-42fd-a1ce-fff4ca1d0c49</Id>
-  <Version>0bdd6161-def5-4081-8725-6170e1e2b884</Version>
+  <Version>2dadba3e-454b-433b-a198-2e56db775fa7</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_Goods_ReceiptReversal_Workflow</Name>

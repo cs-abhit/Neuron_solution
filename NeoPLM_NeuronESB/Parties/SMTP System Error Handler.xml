@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>54f26309-3b45-41ca-ba60-60786ee9d715</Id>
-  <Version>54e420ca-f8af-4129-a7ba-de9eaa88c3bf</Version>
+  <Version>7ba2b7a9-bf4e-4aab-b1cf-d012ddd0eb90</Version>
   <BusinessFlows />
   <Description>A subscriber to transform an error message, typically originating from a business process, and representing a persistent system error, into an email and sending it to interested parties.</Description>
   <Name>SMTP System Error Handler</Name>

@@ -14,17 +14,7 @@
   <DeploymentGroups>
     <EsbAvailabilityGroupDeploymentGroupMapping>
       <DeploymentGroup>DEV</DeploymentGroup>
-      <Servers>
-        <DeploymentServer>
-          <ServerName>localhost</ServerName>
-          <Role>Primary</Role>
-          <RetryCount>0</RetryCount>
-          <RetryInterval>0</RetryInterval>
-          <IsEnabled>true</IsEnabled>
-          <AllocatedCores>0</AllocatedCores>
-          <AllocatedMemory>0</AllocatedMemory>
-        </DeploymentServer>
-      </Servers>
+      <Servers />
     </EsbAvailabilityGroupDeploymentGroupMapping>
   </DeploymentGroups>
 </EsbAvailabilityGroup>
