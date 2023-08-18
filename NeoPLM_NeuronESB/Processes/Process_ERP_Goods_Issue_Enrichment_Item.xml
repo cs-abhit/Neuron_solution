@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>fb5d941d-b84d-43ef-999e-0f33ab1939ac</Id>
-  <Version>8d18c921-9ce9-4eee-8925-89bfbc916b5a</Version>
+  <Version>36b9400d-ffba-47bf-a448-c37ba052646f</Version>
   <BusinessFlows />
   <Description />
   <Name>Process_ERP_Goods_Issue_Enrichment_Item</Name>

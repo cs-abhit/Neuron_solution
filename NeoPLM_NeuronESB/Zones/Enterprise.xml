@@ -318,6 +318,18 @@
         <ChannelName>amqp/rabbitmq</ChannelName>
         <Properties>
           <NameValuePair>
+            <Name>PoisonMessageEnabled</Name>
+            <Value>False</Value>
+          </NameValuePair>
+          <NameValuePair>
+            <Name>RetryCycleDelay</Name>
+            <Value>00:10:00</Value>
+          </NameValuePair>
+          <NameValuePair>
+            <Name>MaxRetryCycles</Name>
+            <Value>3</Value>
+          </NameValuePair>
+          <NameValuePair>
             <Name>DetectDuplicates</Name>
             <Value>False</Value>
           </NameValuePair>

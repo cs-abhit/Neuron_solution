@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>95ef7e86-5d51-4c8e-94ef-a94e7a2b0288</Id>
-  <Version>b520926c-709a-4cd0-850f-d0f815e9ba2c</Version>
+  <Version>eb21b771-6efa-4ff1-a82c-1b9d977410c2</Version>
   <BusinessFlows />
   <Description>A subscriber to receive the success report email messages from business processes and pass it to the Adapter Endpoint to send emails.</Description>
   <Name>MessageArrivalNotificationSubscriber</Name>

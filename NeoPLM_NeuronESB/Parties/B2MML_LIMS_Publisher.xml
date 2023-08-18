@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>e051c650-274a-4c12-87a7-76926eb5fc1b</Id>
-  <Version>020cdb9b-b8f2-4269-9c71-98d9a31864cf</Version>
+  <Version>fb2aa48b-7353-401e-8044-3965c142094d</Version>
   <BusinessFlows />
   <Description>A Publisher to transfer inbound messages from the LIMS facing web service, perform basic schema validation checks on the messages, and assuming they are successful to route them to the appropriate message specific topics.</Description>
   <Name>B2MML_LIMS_Publisher</Name>

@@ -30,7 +30,7 @@
         <string>DefaultAdminEmailAddressString</string>
       </key>
       <value>
-        <string>jcnla6MVGO3bbPFyQjVEOJae8fROEiXztxENz07c4jLP8Urf898u5O4W2+Uw+6h2AEv2BTo/M7mtyNVRZu/RTw==</string>
+        <string>Ns8fLVJjULunNnqb28aOtCtJr2yj8NqpsamVFJT9R6ok5oIdUOrB5gFNGZa0zOefbSqyBvX7jOn8s2LsWkMy5w==</string>
       </value>
     </item>
     <item>
@@ -190,7 +190,7 @@
         <string>RetryButtonForEmail</string>
       </key>
       <value>
-        <string>oWBzUaR01/PqriWFyhO5HQ==</string>
+        <string>jwwFig6LHr6N1XH6NzGxMQ==</string>
       </value>
     </item>
     <item>
@@ -222,7 +222,7 @@
         <string>AllowedMaterialTypes</string>
       </key>
       <value>
-        <string>9W5R2alAflDDTUIiAk033bdTWMmlsJMXOrBsV1Hh49j2wvi/CXem4j8+3c5uakB+</string>
+        <string>9W5R2alAflDDTUIiAk033bdTWMmlsJMXOrBsV1Hh49huxo0YuJrtslZR1gNvuEc2p9RlbhkShyyhnpqlWpMIjI1ai10YevgRdWqIYi1fjc0=</string>
       </value>
     </item>
     <item>
@@ -238,7 +238,7 @@
         <string>PVFacilityFilter</string>
       </key>
       <value>
-        <string>Yen0ZOqBVpgVDU+dx3+xaubU5LR+i3XVh+6UAzyculkpiZuZOka3qdT23sdDL1YT</string>
+        <string>Yen0ZOqBVpgVDU+dx3+xaubU5LR+i3XVh+6UAzyculn5nic1ToSZh9SdVHA9lXz4RQOsNAelz4SOX9QXqttWVw==</string>
       </value>
     </item>
     <item>
@@ -263,6 +263,30 @@
       </key>
       <value>
         <string>J3tub2fWkDNFpwY4uqOJgA==</string>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>AutoCreateMaterialLotForProcessOrder</string>
+      </key>
+      <value>
+        <string>jwwFig6LHr6N1XH6NzGxMQ==</string>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>UnMappedMaterialLotStatus</string>
+      </key>
+      <value>
+        <string>YgfCVTtwtWhfW3qLtC/TTKo9fkbM5NbKIREgfuGJ/ic=</string>
+      </value>
+    </item>
+    <item>
+      <key>
+        <string>PVARIntergrationRetentionPeriod</string>
+      </key>
+      <value>
+        <string>znvPHFCzXRxeD+Qy3N56Tw==</string>
       </value>
     </item>
   </NeuronEnvironmentVariables>
@@ -363,10 +387,10 @@
   <DevelopmentDefault>false</DevelopmentDefault>
   <EncryptUnicode>true</EncryptUnicode>
   <ServerTopology>0</ServerTopology>
-  <StateDatabase>CS-ABHIT.NEURON_ESB_DEV_RNG</StateDatabase>
+  <StateDatabase>DESKTOP-HR5RFGS\SQLEXPRESS01.NEURON_ESB_DEV_RNG</StateDatabase>
   <Units>
     <ESBDeploymentUnit>
-      <MachineName>CS-Abhit</MachineName>
+      <MachineName>localhost</MachineName>
       <IsESBServer>true</IsESBServer>
       <IsQueueServer>false</IsQueueServer>
     </ESBDeploymentUnit>

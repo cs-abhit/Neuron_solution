@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <EsbWorkflowDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>efe0dda7-9093-4032-acf2-97def33a618c</Id>
-  <Version>27a3dcc8-179f-4953-97c9-7680501c00db</Version>
+  <Version>00510d05-6320-4995-b1aa-319e55d3c2ce</Version>
   <BusinessFlows />
   <Description />
   <Name>Enrich_ERP_Goods_IssueReversal_Workflow</Name>

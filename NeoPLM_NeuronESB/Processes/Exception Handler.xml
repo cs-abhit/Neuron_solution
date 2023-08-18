@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>036276bf-208b-43f7-a6c0-d3ad1bc7bf9c</Id>
-  <Version>acf322e2-7950-4e2a-a8cf-253195475505</Version>
+  <Version>538b6835-eab3-42eb-9fe3-0f30afa776eb</Version>
   <BusinessFlows />
   <Description />
   <Name>Exception Handler</Name>
@@ -14,7 +14,6 @@
 
 System.Exception baseException = parentEx.GetBaseException();
 
-if(context.Instance.IsDebugEnabled){
 context.Instance.TraceError ("******************** Message Error ******************************");
 context.Instance.TraceError ("Parent Base Exception: " + baseException.ToString());
 context.Instance.TraceError ("Parent Base Exception Type: " + baseException.GetType().ToString());
@@ -24,20 +23,15 @@ context.Instance.TraceError ("Parent Line Number: " + parentEx.LineNumber.ToStri
 context.Instance.TraceError ("Parent Message: " + parentEx.Message.ToString());
 context.Instance.TraceError ("Parent Pipe Line: " + parentEx.Pipeline.ToString());
 context.Instance.TraceError ("Parent Pipe Line Step: " + parentEx.PipelineStep.ToString());
-}
 
 if (parentEx.StackTrace != null)
 {
-	if(context.Instance.IsDebugEnabled){
 	context.Instance.TraceError ("Parent Stack Trace: " + parentEx.StackTrace.ToString());
-	}
 }
 
 if (parentEx.InnerException != null)
 {
-	if(context.Instance.IsDebugEnabled){	
 	context.Instance.TraceError ("Inner Exception Message: " + parentEx.InnerException.Message.ToString());
-	}
 }&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d4p1:string&gt;Neuron&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Pipelines&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Neuron.Esb&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d4p1:string&gt;&lt;d4p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d4p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Type704279b027f4124a01e147e3dd82da&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;ESBMessagePipelineStep xmlns:d3p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d3p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d4p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;4cfe0bd3-9f4d-41ac-a351-97cdbba3b096&lt;/Id&gt;&lt;Name&gt;Create System Error&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;PipelineException parentEx = (PipelineException) context.Properties["PipelineException"];
 
 System.Exception baseException = parentEx.GetBaseException();
@@ -77,9 +71,7 @@ string errorTemplate = context.Configuration.XmlDocs["ESB System Error Message"]
 
 string eSBErrorMessage = string.Format(errorTemplate, endpointAddress, eSBAction, eSBTopic, sourceSystemID, plantID, transactionID, messageDate, errorCode, errorMessage, originalMessage);
 
-if(context.Instance.IsDebugEnabled){
-context.Instance.TraceDebug ("System Error: " + eSBErrorMessage);
-}
+context.Instance.TraceInformation ("System Error: " + eSBErrorMessage);
 
 //Set Values for Error Properties
 context.Properties["ErrorMessage"] = eSBErrorMessage;

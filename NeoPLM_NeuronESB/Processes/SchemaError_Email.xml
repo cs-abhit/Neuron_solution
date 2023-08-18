@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBMessagePipelineStorage xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>4495beb2-c162-4ad4-a2d1-f2d2f266e553</Id>
-  <Version>a046a660-7647-43e8-88e1-792ff1ad72c6</Version>
+  <Version>ad50ffb3-c75f-481b-afaf-f3049083be1e</Version>
   <BusinessFlows />
   <Description />
   <Name>SchemaError_Email</Name>
@@ -20,11 +20,7 @@ string newExceptionMessage = String.Format(System.Globalization.CultureInfo.Inva
 	                parentEx.PipelineStep, 
 	                (parentEx.InnerException != null ? parentEx.InnerException.Message : ""));
 
-if(context.Instance.IsDebugEnabled){
-context.Instance.TraceDebug("ERROR: " + newExceptionMessage);
-}&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typeefcd49b4526458b957456bfd355d17&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Catch&gt;&lt;Finally&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;c1468d46-f82a-4404-8b96-f35e70bd632b&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children /&gt;&lt;/Finally&gt;&lt;Try&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;7db730bd-1fa2-4f07-ba00-da887f990ec5&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;0c78b861-e5aa-4b1e-b5c1-b4136836b5e3&lt;/Id&gt;&lt;Name&gt;Create Invalid Schema Error&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;if(context.Instance.IsDebugEnabled){
-context.Instance.TraceDebug("SCHEMA VALIDATION FAILURE");
-}
+context.Instance.TraceInformation("ERROR: " + newExceptionMessage);&lt;/Code&gt;&lt;ReferencedAssemblies xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"&gt;&lt;d7p1:string&gt;Neuron&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Pipelines&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Neuron.Esb&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed&lt;/d7p1:string&gt;&lt;d7p1:string&gt;Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&lt;/d7p1:string&gt;&lt;/ReferencedAssemblies&gt;&lt;TypeName&gt;Typeefcd49b4526458b957456bfd355d17&lt;/TypeName&gt;&lt;/ESBMessagePipelineStep&gt;&lt;/Children&gt;&lt;/Catch&gt;&lt;Finally&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;c1468d46-f82a-4404-8b96-f35e70bd632b&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children /&gt;&lt;/Finally&gt;&lt;Try&gt;&lt;Bindings xmlns:d5p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;7db730bd-1fa2-4f07-ba00-da887f990ec5&lt;/Id&gt;&lt;Name&gt;Group&lt;/Name&gt;&lt;Uniquename /&gt;&lt;Children&gt;&lt;ESBMessagePipelineStep xmlns:d6p1="http://schemas.neuronesb.com/pipelines/esb/" i:type="d6p1:EsbMessageCSharpCodePipelineStep"&gt;&lt;Bindings xmlns:d7p1="http://schemas.datacontract.org/2004/07/Neuron.ComponentModel" /&gt;&lt;BreakPoint&gt;Disable&lt;/BreakPoint&gt;&lt;Disable&gt;false&lt;/Disable&gt;&lt;Id&gt;0c78b861-e5aa-4b1e-b5c1-b4136836b5e3&lt;/Id&gt;&lt;Name&gt;Create Invalid Schema Error&lt;/Name&gt;&lt;Uniquename /&gt;&lt;BreakPointLines xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" /&gt;&lt;Code&gt;context.Instance.TraceInformation("SCHEMA VALIDATION FAILURE");
 
 context.Properties.Add ("OriginalMessageID", context.Data.Header.MessageId);
 context.Properties.Add ("ErrorDetail", "");
@@ -91,9 +87,7 @@ string errorTemplate = context.Configuration.XmlDocs["ESB Invalid Schema Error M
 
 string eSBErrorMessage = string.Format(errorTemplate, endpointAddress, eSBAction, eSBTopic, sourceSystemID, plantID, transactionID, messageDate, errorCode, errorMessage, "");
 
-if(context.Instance.IsDebugEnabled){
-context.Instance.TraceDebug ("Schema Error: " + eSBErrorMessage);
-}
+context.Instance.TraceInformation ("Schema Error: " + eSBErrorMessage);
 
 context.Properties["ErrorDetail"] = originalMessage;
 context.Properties["ErrorMessage"] = errorMessage;
@@ -109,21 +103,18 @@ var emailTemplate = context.Configuration.TextDocs["SchemaValidationTemplate"].T
 emailTemplate = emailTemplate.Replace("${ErrorMessage}", context.Properties["ErrorMessage"].ToString());
 emailTemplate = emailTemplate.Replace("${ErrorDetail}", context.Properties["ErrorDetail"].ToString());
 
+context.Instance.TraceInformation(string.Format("Sending email '{2}' from {0} to {1}",emailSender,emailList,emailSubject));
 context.Data.SetProperty("smtp", "To", emailList);
+context.Instance.TraceInformation("SMTP TO: " + emailList);
 context.Data.SetProperty("smtp", "From", emailSender);
+context.Instance.TraceInformation("SMTP FROM: " + emailSender);
 context.Data.SetProperty("smtp", "Subject", emailSubject);
+context.Instance.TraceInformation("SUBJECT: " + emailSubject);
 context.Data.SetProperty("smtp", "Body", emailTemplate);
+context.Instance.TraceInformation("BODY: " + emailTemplate);
 context.Data.SetProperty("smtp", "BodyAsAttachment", false.ToString());
-context.Data.SetProperty("smtp", "IsBodyHtml", true.ToString());
 //context.Data.SetProperty("smtp", "FileName", string.Format("{0}.txt","NeoError"));
-
-if(context.Instance.IsDebugEnabled){
-context.Instance.TraceDebug(string.Format("Sending email '{2}' from {0} to {1}",emailSender,emailList,emailSubject));
-context.Instance.TraceDebug("SMTP TO: " + emailList);
-context.Instance.TraceDebug("SMTP FROM: " + emailSender);
-context.Instance.TraceDebug("SUBJECT: " + emailSubject);
-context.Instance.TraceDebug("BODY: " + emailTemplate);
-}
+context.Data.SetProperty("smtp", "IsBodyHtml", true.ToString());
 
 string filePath = context.Properties["FILEPATH"].ToString();
 string fileName = System.IO.Path.GetFileName(filePath);

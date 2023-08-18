@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ESBSubscriber xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Id>34c7b6d4-5f63-47f2-af50-9e0ba56c1378</Id>
-  <Version>e80183a5-e50f-46a8-affc-3ca5e99ff98c</Version>
+  <Version>3f69633d-8f64-4e05-bc3a-3e1d2e9b989f</Version>
   <BusinessFlows />
   <Description>A subscriber to transform an error message, typically originating from a business process, and representing an invalid message, into an email and sending it to interested parties.</Description>
   <Name>SMTP Invalid Schema Error Handler</Name>
